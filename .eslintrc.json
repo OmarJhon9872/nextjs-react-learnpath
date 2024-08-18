@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "next/core-web-vitals"
+    //"next/typescript" -> "scripts": {                            
+                            //  "lint": "next lint"
+                            //} 
+    //El linter solo soporta versiones de typescript 4.7.4 < 5.5.0
+  ]
+}

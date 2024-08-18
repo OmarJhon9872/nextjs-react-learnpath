@@ -7,6 +7,12 @@ import { Suspense } from 'react';
 import { InvoiceSkeleton, RevenueChartSkeleton, CardsSkeleton, CardSkeleton } from '@/app/ui/skeletons';
 import CardWrapper from '@/app/ui/dashboard/cards';
 
+// Importacion de metadata para cambio de title dinamicamente
+import { Metadata } from 'next'; 
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
+
 export default async function Page() {
 
     const latestInvoices = await fetchLatestInvoices();
