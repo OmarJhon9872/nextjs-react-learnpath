@@ -1,4 +1,6 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
+
+export const experimental_ppr = true; //Partial Prerendering, configurar archivo next 
  
 export default function Layout({ children }:any) {
   return (
