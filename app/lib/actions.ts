@@ -16,6 +16,7 @@ export async function authenticate(
   formData: FormData,
 ) {
   try {
+    console.log("Si llegue al auth")
     await signIn('credentials', formData);
   } catch (error) {
     if (error instanceof AuthError) {
